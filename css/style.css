@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Thasadith');
+
+body{
+    align-items:center;
+}
+
+.main{
+    width: 100%;
+}
+
+.text {
+    color: #333;
+    text-align: center;
+    width: 80%;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 35px;
+    padding-left: 2%;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+a {
+    color: #2A6EB9;
+}
+
+a:hover{
+    color:darkblue;
+}
+
+.formsContainer{
+    display: table;
+    margin: 0 auto;
+}
+
+.contact{
+    font-size: 20px;
+    color: grey;
+}
+
+#landingHeader{
+    margin-top: 40px;
+}
