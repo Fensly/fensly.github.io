@@ -1,653 +1,109 @@
-html {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: transparent;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-
-body {
-    background-image: linear-gradient( 109.6deg,  rgba(17,94,199,1) 11.2%, rgba(63,241,152,0.79) 100.6% );
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #212529;
-    
-                
-}
-
-.header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    margin-top: 45px;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-}
-
-.title{
-    font-family: Helvetica;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 540;
-    letter-spacing: 0;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.footer {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-}
-
-.footer-text {
-    font-family: Helvetica-Bold;
-font-size: 20px;
-color: #380168;
-letter-spacing: 0;
-text-align: center;
-}
-
-.main {
-    
-    width: 100%;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
-.info-column {
-    width: 237px;
-height: 472px;
-display: block;
-padding: 0px 0px 55px 0px;
-z-index: 0;
-margin-left: 130px;
-
-}
-.form-info-container {
-    overflow: hidden;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex-direction: row-reverse;
-    margin: 32px auto 0;
-}
-
-
-.form-container {
-    width: 560px;
-    min-height: 100vh;
-    display: block;
-    padding: 0px 105px 55px 105px;
-    z-index: 1;
-    
-}
-
-.form {
-    border: 30px white solid;
-    background: #FFFFFF;
-    box-shadow: 0 36px 43px 0 rgba(0,0,0,0.20);
-    border-radius: 7px;
-    border-bottom-width: 40px;
-}
-
-.form-title {
-    width: 100%;
-    display: block;
-    line-height: 1.2;
-    padding-bottom: 8px;
-    font-family: Helvetica-Bold;
-    font-size: 20px;
-    color: #000000;
-    letter-spacing: 0;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.form-title-subtext {
-width: 100%;
-display: block;
-line-height: 1.2;
-padding-bottom: 10px;
-font-family: Helvetica;
-font-size: 14px;
-color: #979797;
-letter-spacing: 0;
-text-align: center;
-}
-
-
-.cell {
-    width: 100%;
-    position: relative;
-    /* border: 1px solid #e6e6e6; */
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-margin: 0;
-font-family: Helvetica-Bold;
-font-size: 11px;
-color: #555555;
-letter-spacing: 0;
-text-align: left;
-padding-left: 1px;
-padding-bottom: 4px;
-}
-
-input {
-    outline: none;
-    border: none;
-}
-
-button, input {
-    overflow: visible;
-}
-
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-
-[role=button], a, area, button, input, label, select, summary, textarea {
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-}
-
-
-input, textarea, select, fieldset {
-    border-radius: 2px;
-    max-width: 100%;
-}
-
-input, select, textarea {
-    background: transparent none repeat scroll 0 0;
-    font-size: 14px;
-    line-height: 1.42;
-    padding: 8px 10px;
-}
-
-*, input, *::before, *::after {
-    box-sizing: border-box;
-}
-*, input, *::before, *::after {
-    box-sizing: border-box;
-}
-
-select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDU1IDU2Ij4KPHBhdGggZD0iTTQ0LjU1NyAxOS40OTVjLTIuMDY5IDIuMDY5LTE2LjU1NCAxNi4wMzYtMTYuNTU0IDE2LjAzNnMtMTUuMDAyLTEzLjk2Ny0xNy4wNzEtMTYuMDM2LTMuMTA0IDMuMTA0LTMuMTA0IDMuMTA0bDIwLjE3NSAxOC42MjMgMTkuNjU4LTE4LjYyM2MwIDAtMS4wMzUtNS4xNzMtMy4xMDQtMy4xMDR6IiBmaWxsPSIjNTg1ODU4Ii8+Cjwvc3ZnPg==");
-    background-position: right 10px center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    padding-right: 28px;
-    text-indent: 0.01px;
-    text-overflow: "";
-}
-
-
-input[type="text"], input[type="search"], input[type="password"], input[type="email"], input[type="file"], input[type="number"], input[type="tel"], textarea, select {
-    display: block;
-margin: 0 0 20px;
-max-width: 100%;
-width: 100%;
-border: 1px solid #E6E6E6;
-border-radius: 1px;
-}
-
-.btn-cell {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-    
-}
-
-.btn {
-    width: 80%;
-    display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 20px;
-width: 100%;
-height: 50px;
-font-family: Helvetica-Bold;
-font-size: 12px;
-color: #fff;
-line-height: 1.2;
-text-transform: uppercase;
-letter-spacing: 1px;
-transition: all 0.4s;
-background: #000000;
-border-radius: 4px;
-margin-bottom: 10px;
-}
-
-
-
- @media (max-width: 992px) {
-
-    .form-container {
-    width: 100%;
-}
-
-.info-column {
-    display: none;
-    
-}
-.header {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin-top: 40px;
-width: auto;
-}
-}
-
-@media (max-width: 768px) {
-.form-container {
-    width: 100%;
-}
-
-.info-column {
-    display: none;
-}
-.header {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin-top: 40px;
-width: auto;
-}
-}
-
-@media (max-width: 576px) {
-.form-container {
-    padding: 0px 15px 55px 15px;
-}
-.header {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin-top: 40px;
-width: auto;
-}
-}
-
-select option:first-child {
-      color: green;
-}
-/* 
-Use this for header after main */
-/* 
-html {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: transparent;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-
-body {
-    background-image: linear-gradient( 109.6deg,  rgba(17,94,199,1) 11.2%, rgba(63,241,152,0.79) 100.6% );
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #212529;
-    
-                
-}
-
-.header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    margin-top: -45px;
-    margin-bottom: 75px;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-}
-
-.title{
-    font-family: Helvetica;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 540;
-    letter-spacing: 0;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.footer {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-}
-
-.footer-text {
-    font-family: Helvetica-Bold;
-font-size: 20px;
-color: #380168;
-letter-spacing: 0;
-text-align: center;
-}
-
-.main {
-    
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
-.info-column {
-    width: 237px;
-height: 472px;
-display: block;
-padding: 0px 0px 55px 0px;
-z-index: 0;
-margin-left: 130px;
-
-}
-.form-info-container {
-    overflow: hidden;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex-direction: row-reverse;
-    margin: 40px auto 0;
-}
-
-
-.form-container {
-    width: 560px;
-    min-height: 80vh;
-    display: block;
-    padding: 0px 105px 55px 105px;
-    z-index: 1;
-    
-}
-
-.form {
-    border: 30px white solid;
-    background: #FFFFFF;
-    box-shadow: 0 36px 43px 0 rgba(0,0,0,0.20);
-    border-radius: 7px;
-    border-bottom-width: 40px;
-}
-
-.form-title {
-    width: 100%;
-    display: block;
-    line-height: 1.2;
-    padding-bottom: 8px;
-    font-family: Helvetica-Bold;
-    font-size: 20px;
-    color: #000000;
-    letter-spacing: 0;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.form-title-subtext {
-width: 100%;
-display: block;
-line-height: 1.2;
-padding-bottom: 10px;
-font-family: Helvetica;
-font-size: 14px;
-color: #979797;
-letter-spacing: 0;
-text-align: center;
-}
-
-
-.cell {
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
- 
-label {
-    display: block;
-margin: 0;
-font-family: Helvetica-Bold;
-font-size: 11px;
-color: #555555;
-letter-spacing: 0;
-text-align: left;
-padding-left: 1px;
-padding-bottom: 4px;
-}
-
-input {
-    outline: none;
-    border: none;
-}
-
-button, input {
-    overflow: visible;
-}
-
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-
-[role=button], a, area, button, input, label, select, summary, textarea {
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-}
-
-
-input, textarea, select, fieldset {
-    border-radius: 2px;
-    max-width: 100%;
-}
-
-input, select, textarea {
-    background: transparent none repeat scroll 0 0;
-    font-size: 14px;
-    line-height: 1.42;
-    padding: 8px 10px;
-}
-
-*, input, *::before, *::after {
-    box-sizing: border-box;
-}
-*, input, *::before, *::after {
-    box-sizing: border-box;
-}
-
-select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDU1IDU2Ij4KPHBhdGggZD0iTTQ0LjU1NyAxOS40OTVjLTIuMDY5IDIuMDY5LTE2LjU1NCAxNi4wMzYtMTYuNTU0IDE2LjAzNnMtMTUuMDAyLTEzLjk2Ny0xNy4wNzEtMTYuMDM2LTMuMTA0IDMuMTA0LTMuMTA0IDMuMTA0bDIwLjE3NSAxOC42MjMgMTkuNjU4LTE4LjYyM2MwIDAtMS4wMzUtNS4xNzMtMy4xMDQtMy4xMDR6IiBmaWxsPSIjNTg1ODU4Ii8+Cjwvc3ZnPg==");
-    background-position: right 10px center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    padding-right: 28px;
-    text-indent: 0.01px;
-    text-overflow: "";
-}
-
-
-input[type="text"], input[type="search"], input[type="password"], input[type="email"], input[type="file"], input[type="number"], input[type="tel"], textarea, select {
-    display: block;
-margin: 0 0 20px;
-max-width: 100%;
-width: 100%;
-border: 1px solid #E6E6E6;
-border-radius: 1px;
-}
-
-.btn-cell {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-    
-}
-
-.btn {
-    width: 80%;
-    display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 20px;
-width: 100%;
-height: 50px;
-font-family: Helvetica-Bold;
-font-size: 12px;
-color: #fff;
-line-height: 1.2;
-text-transform: uppercase;
-letter-spacing: 1px;
-transition: all 0.4s;
-background: #000000;
-border-radius: 4px;
-margin-bottom: 10px;
-}
-
-
-
- @media (max-width: 992px) {
-
-    .form-container {
-    width: 100%;
-}
-
-.info-column {
-    display: none;
-    
-}
-.header {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin-top: 40px;
-}
-}
-
-@media (max-width: 768px) {
-.form-container {
-    width: 100%;
-}
-
-.info-column {
-    display: none;
-}
-.header {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin-top: 40px;
-}
-}
-
-@media (max-width: 576px) {
-.form-container {
-    padding: 0px 15px 55px 15px;
-}
-.header {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin-top: 40px;
-}
-}
-
-select option:first-child {
-      color: green;
-} */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Dropped</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/w3.css">
+</head>
+<body>
+	<div class="header">
+		<div class="logo-container">
+			<img src="images/usedroppedbtch.png" style="width: 185px;">
+		</div>
+		<div class="title">
+			We're taking a new, more efficient approach to delivery.
+		</div>
+	</div>
+	<div class="main">
+		<div class="form-info-container">
+			<div class="form-container">
+				<form class="form">
+					<span class="form-title">
+						Help us build a better Droped.Co
+					</span>
+					<span class="form-title-subtext">
+						We'd like to contact you every three days for 10-15 minutes to get feedback on just about everything.
+					</span>
+					<div class="cell">
+						<label for="name">NAME *</label>
+						<input id="name"  type="text" name="name" placeholder="" required>
+					</div>
+					<div class="cell">
+						<label for="number">PHONE NUMBER *</label>
+						<input id="number"  type="tel" name="number" placeholder=""required>
+					</div>
+					<div class="cell">
+						<label for="email">EMAIL *</label>
+						<input id="email"  type="email" name="email" placeholder="" required>
+					</div>
+					<div class="cell">
+						<label for="school">SCHOOL *</label>
+						<div>
+							<select class="_select" name="service">
+									<option>Northeastern</option>
+									<option>I graduated NEU recently but still live near campus (Mission Hill)</option>
+							</select>
+						</div>
+					</div>
+					<div class="btn-cell">
+						<input type="submit" value="SUBMIT" class="btn">
+					</div>
+					
+					                    <!-- <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='http://www.instagram.com/';}"></iframe>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSca_HyzdNJZFX9iqRyahGUBSECSWHdTOGQr5L-3qqn6FRuj4w/formResponse" method="post" target="hidden_iframe"
+                onsubmit="submitted=true;">
+                        <label>Name</label>
+                        <input name="entry.924365425" type="text" placeholder="Name" />
+                        <br>
+                        <label>Email</label>
+                        <br>
+                        <select name="entry.124481903" >
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>              
+                    <input type="submit" value="Send" />
+                    </form> -->
+			</form>
+			</div>
+			<div class="info-column flex-col-c-m">
+					<div class="w3-content w3-section">
+						<img class="mySlides" src="images/iphone1.png" style="width: 380px;">
+						<img class="mySlides" src="images/iphone2.png" style="width: 380px;">
+						<img class="mySlides" src="images/iphone3.png" style="width: 380px;">
+						<img class="mySlides" src="images/iphone4.png" style="width: 380px;">
+						<img class="mySlides" src="images/iphone5.png" style="width: 380px;">
+						<img class="mySlides" src="images/iphone6.png" style="width: 380px;">
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer" style="
+    margin-bottom: 10px;
+">
+		<a class="footer-text" href="https://www.instagram.com/dropedco/">ig</a>
+		<a class="footer-text" style="margin-left: 30px;" href="https://www.instagram.com/dropedco/" >contact</a>
+	</div>
+	<script>
+			var myIndex = 0;
+			carousel();
+			
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 3000);    
+			}
+	</script>
+</body>
+</html>
