@@ -1,25 +1,109 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dropped.Nu</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="shortcut icon" href="icon_2Sj_icon.ico" type="image/x-icon">
+	<title>Dropped</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/w3.css">
 </head>
 <body>
-    <div class=main id=mainId>
-        <h1 id=logo></h1>
-        <h2 class="text" id="landingHeader">Droped.Co <br> We're taking a new, more efficient approach to delivery.</h2>
-        <div class="formsContainer">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNiLPusZ72kRj6ljUyqGou-X61JsM9T-YWdrIcu65HQc-pNg/viewform?embedded=true" width="340" height="1101" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
-        <h2 class="text">1. You select ➡️ 2. We diligently gather your items ➡️ 3. Then it's delivered to you at NEU 🐾 from way out in the boonies.</h2>
-        <h2 class="text">We’ll be up and running by 9/1. Follow us on Instagram @DropedCo to know when.</h2>
-        <h3 class="text contact">Contact: Alex at <a href="mailto:alex@droped.co">alex@droped.co</a> & Lekan at <a href="mailto:lekan@droped.co"> lekan@droped.co</h2>
-
-
-    </div>
-    
+	<div class="header">
+		<div class="logo-container">
+			<img src="usedroppedbtch.png" style="width: 185px;">
+		</div>
+		<div class="title">
+			We're taking a new, more efficient approach to delivery.
+		</div>
+	</div>
+	<div class="main">
+		<div class="form-info-container">
+			<div class="form-container">
+				<form class="form">
+					<span class="form-title">
+						Help us build a better Droped.Co
+					</span>
+					<span class="form-title-subtext">
+						We'd like to contact you every three days for 10-15 minutes to get feedback on just about everything.
+					</span>
+					<div class="cell">
+						<label for="name">NAME *</label>
+						<input id="name"  type="text" name="name" placeholder="" required>
+					</div>
+					<div class="cell">
+						<label for="number">PHONE NUMBER *</label>
+						<input id="number"  type="tel" name="number" placeholder=""required>
+					</div>
+					<div class="cell">
+						<label for="email">EMAIL *</label>
+						<input id="email"  type="email" name="email" placeholder="" required>
+					</div>
+					<div class="cell">
+						<label for="school">SCHOOL *</label>
+						<div>
+							<select class="_select" name="service">
+									<option>Northeastern</option>
+									<option>I graduated NEU recently but still live near campus (Mission Hill)</option>
+							</select>
+						</div>
+					</div>
+					<div class="btn-cell">
+						<input type="submit" value="SUBMIT" class="btn">
+					</div>
+					
+					                    <!-- <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='http://www.instagram.com/';}"></iframe>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSca_HyzdNJZFX9iqRyahGUBSECSWHdTOGQr5L-3qqn6FRuj4w/formResponse" method="post" target="hidden_iframe"
+                onsubmit="submitted=true;">
+                        <label>Name</label>
+                        <input name="entry.924365425" type="text" placeholder="Name" />
+                        <br>
+                        <label>Email</label>
+                        <br>
+                        <select name="entry.124481903" >
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>              
+                    <input type="submit" value="Send" />
+                    </form> -->
+			</form>
+			</div>
+			<div class="info-column flex-col-c-m">
+					<div class="w3-content w3-section">
+						<img class="mySlides" src="iphone1.png" style="width: 380px;">
+						<img class="mySlides" src="iphone2.png" style="width: 380px;">
+						<img class="mySlides" src="iphone3.png" style="width: 380px;">
+						<img class="mySlides" src="iphone4.png" style="width: 380px;">
+						<img class="mySlides" src="iphone5.png" style="width: 380px;">
+						<img class="mySlides" src="iphone6.png" style="width: 380px;">
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer" style="
+    margin-bottom: 10px;
+">
+		<a class="footer-text" href="https://www.instagram.com/dropedco/">ig</a>
+		<a class="footer-text" style="margin-left: 30px;" href="https://www.instagram.com/dropedco/" >contact</a>
+	</div>
+	<script>
+			var myIndex = 0;
+			carousel();
+			
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 3000);    
+			}
+	</script>
 </body>
 </html>
